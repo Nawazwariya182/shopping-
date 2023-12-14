@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <style>
+     label{
+      color: white;
+      font-size: large;
+    }
+    body{
+      background-color:  rgb(26, 23, 23);
+    }
+    a:link{color: black;}
+    a:hover{color: grey;}
+    a:active{color: black; }
+    a:visited{color:rgb(77, 70, 70);}
+    input{
+      border-color: black;
+      border: 4px;
+      border-radius: 4px;
+
+    }
+    header{
+      color: white;
+    }
+    main {
+      color: white;
+    }
+    section{
+      background-color:rgb(44, 42, 42);
+  width: 1000px;
+  border-style: solid;
+  border-radius: 4px;
+  color: black;
+  height: 750px;
+    }
+    h2{
+    background-color:white;
+    border-radius: 7px;
+    width: 600px;
+    align-items: center;
+    border-style: solid ;
+    border-color: black;
+    color: black;
+  }
+  h1{
+    background-color:white;
+    border-radius: 7px;
+    width: 900px;
+    align-items: center;
+    border-style: solid ;
+    border-color: black;
+    color: black;
+  }
+    </style>
+  </head>
+  <body>
+<center>
+  <section>
+    <header>
+      <h1>Payment</h1>
+    </header>
+    <main>
+      <h2>Choose Payment Method:</h2>
+      <div class="payment-options">
+        <div class="payment-option">
+          <label>
+            <input type="radio" name="payment-method" value="google-pay">
+            <img src="gpay.jpg" alt="Google Pay" width="150">
+          </label>
+        </div>
+        <div class="payment-option">
+          <label>
+            <input type="radio" name="payment-method" value="paytm">
+            <img src="paytm.png" alt="Paytm" width="150">
+          </label>
+        </div>
+      </div>
+      <form method="POST" action="payment-confirmation.php">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" name="amount">
+        </div>
+        <button type="submit">Submit Payment</button>
+      </form>
+    </main>
+ </section>
+ </center>
+</body>
+</html>

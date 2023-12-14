@@ -1,0 +1,74 @@
+body{
+    background-color:rgb(26, 23, 23);
+}
+  .container{
+            position: relative;
+            isolation: isolate;
+            width: 40rem;
+            padding: 10rem 0;
+            color: #fff;
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 1px 1rem
+            rgba(0, 0, 0, 0.1);
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 40rem;
+            height: 10rem;
+            background-color: #6600ec;
+            border-radius: 1rem 1rem 100% 100%;}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: black;
+    border: 10px;
+  }
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: black;
+    border: 10px;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: black;
+    border: 10px;
+  }
+ button[type=submit]{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  section{
+    background-color:rgb(44, 42, 42);
+    width: 1200px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    height:500px;
+    font-size: medium;
+    }
+    h1{
+        background-color: white;
+        border: 13px;
+        border-color: black;
+        width: 30%;
+        color: black;
+        border-radius: 2px ;
+    }
